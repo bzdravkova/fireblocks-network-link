@@ -18,6 +18,8 @@
     "lint": "eslint src tests",
     "lint:fix": "eslint src tests --fix",
     "test": "NODE_ENV=test jest --verbose --json --outputFile=test-results.json",
+    "test:d": "jest --verbose --json --outputFile=test-results.json tests/deposits.test.ts",
+    "test:w": "jest --verbose --json --outputFile=test-results.json tests/withdrawals.test.ts",
     "test:watch": "npm run test -- --watch",
     "test:sanity": "npm run test -- --config=jest.sanity.config.ts tests/sanity-tests",
     "test:sanity:watch": "npm run test:sanity -- --watch",
